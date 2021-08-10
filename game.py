@@ -29,8 +29,8 @@ def main(filename):
 				print('people number:' + str(pplnumber))
 				print('total avg:' + str(totalAvg))
 				for numb in resultList:
-					print('num pp:'+str(numb))
-					outFile.write(str(totalAvg-numb)) #Print into file each difference from average vs contributions
+					print('Money given per person:'+str(numb))
+					outFile.write(str(totalAvg-numb)+'\n') #Print into file each difference from average vs contributions
 					print(totalAvg-numb)	     #Print to console
 
 			if tripFlag == 0:			     #Know which line is being read 1st to set number of people
